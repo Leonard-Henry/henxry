@@ -1,0 +1,16 @@
+
+
+USE leo_movies;
+
+CREATE TABLE movies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    thumbnail VARCHAR(255),
+    stream_link VARCHAR(255),
+    download_link VARCHAR(255)
+);
+
+INSERT INTO movies (title, description, thumbnail, stream_link, download_link) VALUES
+('Movie 1', 'Description of Movie 1', 'movie1-thumbnail.jpg', 'stream1.php', 'download1.php'),
+('Movie 2', 'Description of Movie 2', 'movie2-thumbnail.jpg', 'stream2.php', 'download2.php');
